@@ -1,0 +1,161 @@
+/* Stili di base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della finestra */
+}
+
+/* Aggiungi un overlay trasparente con un pseudo-elemento */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('foto/image.png') no-repeat center center fixed; /* Immagine di sfondo */
+    background-size: cover;
+    z-index: -1; /* Posiziona l'overlay dietro il contenuto */
+    opacity: 0.5; /* Trasparenza dell'immagine di sfondo */
+}
+
+/* Stili per l'header */
+header {
+    text-align: center;
+    font-family:monospace;
+    padding: 50px 0;
+    background-color: #ffe4e1; /* Rosa pastello */
+    color: #ff69b4; /* Rosa più acceso per il testo */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Stili per il menu di navigazione */
+nav {
+    background-color: #fafad2; /* Giallo pastello */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #4682b4; /* Blu leggermente più scuro */
+}
+
+/* Stili per le sezioni */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #e6e6fa; /* Lavanda */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff69b4; /* Rosa acceso */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Stili per il form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Grigio molto chiaro */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Permette solo la ridimensionabilità verticale */
+}
+
+.profile-img {
+    max-width: 250px; /* Larghezza massima dell'immagine */
+    height: auto; /* Mantiene le proporzioni originali */
+     /* border-radius: 50%;Facoltativo: rende l'immagine rotonda */
+    display: block; /* Facoltativo: centrare l'immagine */
+    margin: 0 auto; /* Facoltativo: centrare l'immagine orizzontalmente */
+}
+
+.Email strong {
+    font-weight: bold;
+}
+
+/* Stile per il testo con classe IG */
+.IG strong {
+    font-weight: bold;
+}
+
+/* Stile per il testo con classe FB */
+.FB strong {
+    font-weight: bold;
+}
+
+
+/* Stili per il pulsante Invia */
+button {
+    padding: 10px 20px;
+    background-color: #87cefa; /* Blu pastello */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4682b4; /* Completa il colore */
+}
+
