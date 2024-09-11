@@ -1,35 +1,45 @@
 /* Stili di base */
 body {
+    padding-top: 100px; /* Spazio sufficiente per evitare che il contenuto si sovrapponga all'header */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     position: relative;
     min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della finestra */
-}
-
-/* Aggiungi un overlay trasparente con un pseudo-elemento */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('foto/image.png') no-repeat center center fixed; /* Immagine di sfondo */
-    background-size: cover;
-    z-index: -1; /* Posiziona l'overlay dietro il contenuto */
-    opacity: 0.5; /* Trasparenza dell'immagine di sfondo */
+    background-color: #f5f5dc; /* Beige pastello (puoi scegliere un altro colore se preferisci) */
+    min-height: 100vh;
 }
 
 /* Stili per l'header */
-header {
+/* Stili per l'header fisso */
+.fixed-header {
     text-align: center;
-    font-family:monospace;
-    padding: 50px 0;
-    background-color: #ffe4e1; /* Rosa pastello */
-    color: #ff69b4; /* Rosa più acceso per il testo */
+    font-family: monospace;
+    padding: 1px 0;
+    background-color: #e6e6fa; /* Verde menta pastello */
+    color: #2e8b57; /* Verde più scuro per il testo */
+    position: fixed; /* Parte fissa */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge ombra */
 }
+
+/* Stile per evitare che il contenuto si sovrapponga alla parte fissa */
+body {
+    padding-top: 80px; /* Spazio per la parte fissa */
+}
+
+/* Stili per la parte scrollabile */
+
+
+.scrollable-header p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
 
 header h1 {
     font-size: 3em;
@@ -43,7 +53,7 @@ header p {
 
 /* Stili per il menu di navigazione */
 nav {
-    background-color: #fafad2; /* Giallo pastello */
+   /* background-color: #fafad2; /* Giallo pastello */
     padding: 15px 0;
 }
 
@@ -82,7 +92,7 @@ section {
 
 h2 {
     font-size: 2em;
-    color: #ff69b4; /* Rosa acceso */
+    color: #2e8b57; /* Verde scuro */
     margin-bottom: 10px;
     text-align: center;
 }
@@ -142,7 +152,6 @@ textarea {
     font-weight: bold;
 }
 
-
 /* Stili per il pulsante Invia */
 button {
     padding: 10px 20px;
@@ -158,4 +167,3 @@ button {
 button:hover {
     background-color: #4682b4; /* Completa il colore */
 }
-
