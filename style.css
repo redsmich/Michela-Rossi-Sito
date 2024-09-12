@@ -159,27 +159,3 @@ button:hover {
 }
 
 /* Media query per dispositivi mobili */
-@media screen and (max-width: 768px) {
-    /* Stili per i dispositivi mobili */
-    section {
-        max-width: 80%; /* Limita la larghezza al 90% dello schermo */
-        margin: 20px auto; /* Centra la sezione */
-    }
-
-    nav ul {
-        display: block; /* Cambia il menu in blocchi verticali */
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Aggiunge spazio tra gli elementi del menu */
-    }
-
-    .profile-img-large {
-        max-width: 200px; /* Riduce la larghezza dell'immagine di profilo per i dispositivi mobili */
-    }
-
-    .profile-img {
-        width: 50px; /* Riduci la dimensione del logo su dispositivi mobili */
-    }
-}
