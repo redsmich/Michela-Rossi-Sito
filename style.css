@@ -162,7 +162,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     /* Stili per i dispositivi mobili */
     section {
-        max-width: 90%; /* Limita la larghezza al 90% dello schermo */
+        max-width: 80%; /* Limita la larghezza al 90% dello schermo */
         margin: 20px auto; /* Centra la sezione */
     }
 
