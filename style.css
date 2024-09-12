@@ -185,6 +185,10 @@ button:hover {
     }
 
     nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 10;
         display: block; /* Cambia il menu in blocchi verticali */
         text-align: center;
     }
