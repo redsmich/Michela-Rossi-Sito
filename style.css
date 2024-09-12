@@ -194,7 +194,7 @@ button:hover {
     }
 
     .profile-imgm {
-        max-width: 50px; /* Riduce la larghezza dell'immagine di profilo per i dispositivi mobili */
+        max-width: 150px; /* Riduce la larghezza dell'immagine di profilo per i dispositivi mobili */
     }
 
     .profile-img {
