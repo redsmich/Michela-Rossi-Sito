@@ -8,18 +8,23 @@
 </head>
 <body>
     <header>
-        <!-- Header fisso per "Michela Rossi" -->
+        <!-- Fixed header for "Michela Rossi" -->
         <div class="fixed-header">
-            <h1>Michela Rossi</h1>
+            <div class="header-content">
+                <h1>Michela Rossi</h1>
+                <a href="https://redsmich.github.io/Michela-Rossi-en/" class="flag-link">
+                <img src=".\foto\uk-flag.png" alt="Bandiera Italiana" class="flag-img">
+                </a>
+            </div>
         </div>
-        
-        <!-- Parte scrollabile con l'immagine e la citazione -->
+
         <div class="scrollable-header">
             <nav>
                 <div>
                     <img src="./foto/fotox.JPG" class="profile-img-large" alt="Michela Rossi">
                 </div>
             </nav>
+
             <p>L'unico modo per fare un ottimo lavoro è amare quello che fai.</p>
             <p>– Steve Jobs</p>
         </div>
@@ -38,29 +43,23 @@
     <section id="chi-sono">
         <h2>Chi Sono?</h2>
         <p>
-            <img src="./foto/prsù.png" class="profile-img" > Michela Rossi
+            <img src="./foto/prsù.png" class="profile-img"> Michela Rossi
         </p>
-        
         <p>
-            <img src="./foto/cmp.png" class="profile-img" >  26 Settembre 2001.
+            <img src="./foto/cmp.png" class="profile-img"> 26 Settembre 2001.
         </p>
-
         <p>
-            <img src="./foto/luogo.jpg" class="profile-img" >  Alatri (FR)
+            <img src="./foto/luogo.jpg" class="profile-img"> Alatri (FR)
         </p>
-        
         <p>
             Mi piace pormi sempre nuovi obiettivi e cercare di raggiungerli, sia in autonomia che affiancata da qualcuno.
         </p>
-        
         <p>
             Sono sempre (o quasi!) solare e positiva, credo che ogni sfida possa avere una soluzione creativa.
         </p>
-    
         <p>
-           Nel tempo libero mi piace leggere, studiare discipline al di fuori del mio percorso o approfondire argomenti già studiati.
+            Nel tempo libero mi piace leggere, studiare discipline al di fuori del mio percorso o approfondire argomenti già studiati.
         </p>
-        
     </section>
     
     <section id="formazione">
@@ -68,11 +67,15 @@
         <ul>
             <li>Attualmente iscritta al corso di Laurea Magistrale in Matematica Applicata presso l'Università degli Studi di Roma Tre</li>
             <li>[2024] Laurea Triennale in Matematica presso l'Università degli studi di Roma - Tor Vergata</li>
-            <li>Tesi di Laurea: Metodo del Subdifferenziale e Applicazioni</li>
+            <span class="tesi-label">[Tesi di Laurea]:</span> 
+            <span class="tesi-links">
+                <a href="./Documents/tesi (1).pdf" target="_blank" class="tesi-title">Metodo del Subdifferenziale e Applicazioni</a>
+                <a href="./Documents/discorso_tesi.pdf" target="_blank" class="abstract-link">Abstract</a>
+            </span>
             <li>[2020] Diploma presso il Liceo Scientifico Luigi Pietrobono - Alatri</li> 
         </ul>
     </section>
-
+    
     <section id="competenze">
         <h2>Competenze</h2>
         <ul>
@@ -100,17 +103,16 @@
     <section id="Contatti">
         <h2>Contattami!</h2>
         <p><strong>
-            <img src="./foto/em.JPG" class="profile-img" >   
+            <img src="./foto/em.JPG" class="profile-img">   
             Email:</strong> <a href="mailto:michela.rossi01@yahoo.com">michela.rossi01@yahoo.com</a>
         </p>
         <p><strong>
-            <img src="./foto/in.JPG" class="profile-img" >  
-            Linkedin: </strong> 
+            <img src="./foto/in.JPG" class="profile-img">  
+            Linkedin:</strong> 
             <a href="https://www.linkedin.com/in/michela-rossi-a09a22321/" target="_blank">Michela Rossi</a>
         </p>
-        
         <p><strong> 
-            <img src="./foto/git.JPG" class="profile-img" >  
+            <img src="./foto/git.JPG" class="profile-img">  
             GitHub:</strong>
             <a href="https://github.com/redsmich" target="_blank">redsmich</a>
         </p>
@@ -135,5 +137,7 @@
     <footer>
         <p>&copy; 2024 Michela Rossi. Tutti i diritti riservati.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
