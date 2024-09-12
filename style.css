@@ -200,6 +200,17 @@ button:hover {
     }
 
     .profile-img {
-        width: 18px; /* Riduci la dimensione del logo su dispositivi mobili */
+        width: 5px; /* Riduci la dimensione del logo su dispositivi mobili */
     }
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Aggiunge una transizione sul colore */
+}
+
+nav ul li a:hover {
+    color: #4682b4; /* Cambia colore quando passi sopra al link */
 }
