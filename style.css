@@ -74,6 +74,7 @@ nav ul li a {
     color: #333;
     font-weight: bold;
     font-size: 1.2em;
+    transition: color 0.3s ease; /* Aggiunge una transizione sul colore */
 }
 
 nav ul li a:hover {
@@ -177,6 +178,7 @@ button:hover {
     background-color: #4682b4; /* Completa il colore */
 }
 
+/* Media query per dispositivi mobili */
 @media screen and (max-width: 768px) {
     /* Stili per i dispositivi mobili */
     section {
@@ -198,7 +200,17 @@ button:hover {
     }
 
     .profile-img {
-        width: 50px; /* Dimensione adeguata per il logo su dispositivi mobili */
-        height: 50px; /* Imposta un'altezza fissa per mantenere il logo proporzionato */
+        width: 5px; /* Riduci la dimensione del logo su dispositivi mobili */
     }
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Aggiunge una transizione sul colore */
+}
+
+nav ul li a:hover {
+    color: #4682b4; /* Cambia colore quando passi sopra al link */
 }
