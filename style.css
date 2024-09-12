@@ -12,7 +12,6 @@ body {
     position: relative;
     min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della finestra */
     background-color: #f5f5dc; /* Beige pastello */
-    min-height: 100vh;
 }
 
 /* Stili per l'header fisso */
@@ -29,13 +28,9 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge ombra */
 }
 
-/* Stile per evitare che il contenuto si sovrapponga alla parte fissa */
-body {
-    padding-top: 80px; /* Spazio per la parte fissa */
-}
-
 /* Stili per la parte scrollabile */
 .scrollable-header p {
+    margin-top: 100px;
     text-align: center;
     font-size: 1.2em;
     margin: 10px 0;
@@ -132,13 +127,6 @@ textarea {
 }
 
 /* Immagini di profilo e logo */
-.profile-imgm {
-    max-width: 250px; /* Larghezza massima dell'immagine */
-    height: auto; /* Mantiene le proporzioni originali */
-    display: block;
-    margin: 0 auto;
-}
-
 .profile-img {
     width: 22px; /* Imposta una larghezza più piccola per l'immagine */
     height: auto; /* Mantiene le proporzioni dell'immagine */
@@ -148,21 +136,13 @@ textarea {
     display: inline-block;
 }
 
-.Email strong {
-    font-weight: bold;
+.profile-img-large {
+    max-width: 300px; /* Larghezza massima dell'immagine */
+    height: auto; /* Mantiene le proporzioni originali */
+    display: block;
+    margin: 100px auto 20px auto;
 }
 
-/* Stile per il testo con classe IG */
-.IG strong {
-    font-weight: bold;
-}
-
-/* Stile per il testo con classe FB */
-.FB strong {
-    font-weight: bold;
-}
-
-/* Stili per il pulsante Invia */
 button {
     padding: 10px 20px;
     background-color: #87cefa; /* Blu pastello */
@@ -195,22 +175,11 @@ button:hover {
         margin: 10px 0; /* Aggiunge spazio tra gli elementi del menu */
     }
 
-    .profile-imgm {
+    .profile-img-large {
         max-width: 150px; /* Riduce la larghezza dell'immagine di profilo per i dispositivi mobili */
     }
 
     .profile-img {
-        width: 5px; /* Riduci la dimensione del logo su dispositivi mobili */
+        width: 50px; /* Riduci la dimensione del logo su dispositivi mobili */
     }
-}
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease; /* Aggiunge una transizione sul colore */
-}
-
-nav ul li a:hover {
-    color: #4682b4; /* Cambia colore quando passi sopra al link */
 }
