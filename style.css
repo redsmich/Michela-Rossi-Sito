@@ -236,7 +236,7 @@ button:hover {
 
     .flag-link {
         position: absolute; /* Keeps flag in position relative to header */
-        right: 10px; /* Adjust distance from the right edge */
+        right: 15px; /* Adjust distance from the right edge */
         top: 10px; /* Adjust distance from the top edge */
         z-index: 1100; /* Ensures the flag is on top */
     }
