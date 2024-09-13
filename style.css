@@ -203,12 +203,12 @@ button:hover {
     nav ul {
         display: block; /* Changes menu to vertical blocks */
         text-align: center;
-        padding: 0; /* Ensures no additional padding */
-        margin: 0; /* Ensures no additional margin */
+        padding: 0; /* Removes default padding */
+        margin: 0; /* Removes default margin */
     }
 
     nav ul li {
-        margin: 15px 0; /* Adds more space between menu items */
+        margin: 15px 0; /* Adds space between menu items */
     }
 
     .profile-img-large {
@@ -220,30 +220,27 @@ button:hover {
     }
 
     .fixed-header {
-        padding: 10px; /* Reduces padding */
-        text-align: center; /* Centers the text */
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center the text */
         overflow: hidden; /* Prevents overflow of content */
     }
 
     .header-content {
         position: relative; /* Ensures correct positioning for mobile */
-        align-items: center; /* Aligns items vertically */
+        align-items: center; /* Align items vertically */
         padding: 10px 0; /* Adjust padding if necessary */
-        text-align: center; /* Center aligns text and content */
     }
 
     .header-content h1 {
-        font-size: 2em; /* Reduces font size for smaller screens */
+        font-size: 2em; /* Reduce font size for smaller screens */
         margin: 0;
     }
 
     .flag-link {
         position: absolute; /* Keeps flag in position relative to header */
-        right: 10px; /* Adjust distance from the right edge */
+        right: 20px; /* Adjust distance from the right edge */
         top: 10px; /* Adjust distance from the top edge */
         z-index: 1100; /* Ensures the flag is on top */
-        background-color: #fff; /* Optional: to ensure visibility */
-        padding: 2px; /* Adds padding around the flag image */
     }
 
     .flag-img {
