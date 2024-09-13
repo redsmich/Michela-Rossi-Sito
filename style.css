@@ -25,34 +25,39 @@ body {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
 }
 
 .header-content {
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    align-items: center; /* Aligns items vertically */
     width: 100%;
+    position: relative; /* Allows positioning of the flag */
 }
 
 .header-content h1 {
     margin: 0;
     text-align: center;
     flex-grow: 1;
+    /* Add margin to adjust position */
+    margin-left: 0px; /* Adjust this value to move the name right or left */
+    margin-top: 10px;  /* Adjust this value to move the name up or down */
 }
 
 .flag-link {
     display: inline-block;
-    margin-left: 20px; /* Adds space between the name and the flag */
+    position: absolute;
+    right: 30px; /* Adjust this value to move the flag further from the edge */
+    top: 15px; /* Adjust this value to move the flag up or down */
 }
 
 .flag-img {
-    width: 40px; /* Adjust size if necessary */
-    height: 40px; /* Adjust size if necessary */
-    border-radius: 50%; /* Rounds the image */
-    object-fit: cover; /* Maintains proper proportions */
+    width: 40px; /* Modifica la dimensione se necessario */
+    height: 40px; /* Modifica la dimensione se necessario */
+    border-radius: 50%; /* Questo rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni corrette */
 }
 
 /* Styles for the scrollable part */
@@ -187,29 +192,7 @@ button:hover {
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
-    .fixed-header {
-        padding: 10px; /* Reduces padding */
-    }
-
-    .header-content {
-        flex-direction: column; /* Stack content vertically */
-    }
-
-    .header-content h1 {
-        font-size: 2em; /* Reduces font size for small screens */
-        margin: 0;
-    }
-
-    .flag-link {
-        position: static; /* Prevents absolute positioning issues */
-        margin-top: 10px;
-    }
-
-    .flag-img {
-        width: 30px; /* Adjust flag size */
-        height: 30px; /* Adjust flag size */
-    }
-
+    /* Styles for mobile devices */
     section {
         max-width: 90%; /* Limits width to 90% of the screen */
         margin: 20px auto; /* Centers the section */
@@ -230,5 +213,21 @@ button:hover {
 
     .profile-img {
         width: 50px; /* Reduces logo size on mobile devices */
+    }
+
+    .header-content {
+        position: relative; /* Ensures correct positioning for mobile */
+    }
+
+    .flag-link {
+        position: absolute;
+        right: 20px; /* Distance from the right edge */
+        top: 20px; /* Distance from the top edge */
+        margin-top: 0; /* Resetta il margine superiore */
+    }
+
+    .header-content h1 {
+        font-size: 2em; /* Riduce la dimensione del font per gli schermi piccoli */
+        margin: 0;
     }
 }
