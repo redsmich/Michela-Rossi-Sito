@@ -201,7 +201,7 @@ button:hover {
     }
 
     nav ul {
-        display: block; /* Changes menu to vertical blocks */
+        display: vertical block; /* Changes menu to vertical blocks */
         text-align: center;
     }
 
@@ -237,7 +237,7 @@ button:hover {
     .flag-link {
         position: absolute; /* Keeps flag in position relative to header */
         right: 25px; /* Adjust distance from the right edge */
-        top: 17px; /* Adjust distance from the top edge */
+        top: 16px; /* Adjust distance from the top edge */
         z-index: 1100; /* Ensures the flag is on top */
     }
 
