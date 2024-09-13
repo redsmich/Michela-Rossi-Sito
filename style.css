@@ -28,6 +28,7 @@ body {
     justify-content: center; /* Center the content horizontally */
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    overflow: hidden; /* Prevents overflow */
 }
 
 .header-content {
@@ -49,8 +50,9 @@ body {
 .flag-link {
     display: inline-block;
     position: absolute;
-    right: 30px; /* Adjust this value to move the flag further from the edge */
-    top: 15px; /* Adjust this value to move the flag up or down */
+    right: 20px; /* Adjust this value to move the flag further from the edge */
+    top: 17px; /* Adjust this value to move the flag up or down */
+    z-index: 1100; /* Ensures the flag is on top of other elements */
 }
 
 .flag-img {
@@ -215,19 +217,32 @@ button:hover {
         width: 50px; /* Reduces logo size on mobile devices */
     }
 
-    .header-content {
-        position: relative; /* Ensures correct positioning for mobile */
+    .fixed-header {
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center the text */
+        overflow: hidden; /* Prevents overflow of content */
     }
 
-    .flag-link {
-        position: absolute;
-        right: 20px; /* Distance from the right edge */
-        top: 20px; /* Distance from the top edge */
-        margin-top: 0; /* Resetta il margine superiore */
+    .header-content {
+        position: relative; /* Ensures correct positioning for mobile */
+        align-items: center; /* Align items vertically */
+        padding: 10px 0; /* Adjust padding if necessary */
     }
 
     .header-content h1 {
-        font-size: 2em; /* Riduce la dimensione del font per gli schermi piccoli */
+        font-size: 2em; /* Reduce font size for smaller screens */
         margin: 0;
+    }
+
+    .flag-link {
+        position: absolute; /* Keeps flag in position relative to header */
+        right: 10px; /* Adjust distance from the right edge */
+        top: 10px; /* Adjust distance from the top edge */
+        z-index: 1100; /* Ensures the flag is on top */
+    }
+
+    .flag-img {
+        width: 30px; /* Adjust size if necessary */
+        height: 30px; /* Adjust size if necessary */
     }
 }
