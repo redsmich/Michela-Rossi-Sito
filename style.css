@@ -33,13 +33,15 @@ body {
 
 .header-content {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
     width: 100%;
-    max-width: 1200px; /* Optional: Set a max width for better layout */
 }
 
 .header-content h1 {
-    margin: 0px 510px 20px auto;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .flag-link {
@@ -446,4 +448,25 @@ button:hover {
 .abstract-link {
     display: block; /* Blocks the link for vertical alignment */
     color: #4682b4; /* Blue color */
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-header {
+        padding: 10px; /* Riduci il padding */
+        text-align: center; /* Centra il testo */
+    }
+
+    .header-content h1 {
+        font-size: 2em; /* Riduce la dimensione del font per gli schermi piccoli */
+        margin: 0;
+    }
+
+    .flag-link {
+        position: static; /* Impedisce lo spostamento rispetto alla posizione assoluta */
+        margin-top: 10px;
+    }
+
+    .profile-img-large {
+        max-width: 150px; /* Riduce ulteriormente l'immagine */
+    }
 }
