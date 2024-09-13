@@ -207,7 +207,7 @@ button:hover {
 
     nav ul li {
         margin: 10px 0; /* Adds space between menu items */
-        font-size: 0.1em;
+        font-size: 0.5em;
     }
 
     .profile-img-large {
