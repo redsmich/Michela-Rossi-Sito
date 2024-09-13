@@ -102,7 +102,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2em;
     transition: color 0.3s ease; /* Adds transition on color */
 }
 
@@ -207,6 +207,14 @@ button:hover {
 
     nav ul {
         margin: 10px 15px; /* Adds space between menu items */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: color 0.3s ease; /* Adds transition on color */
     }
 
     .profile-img-large {
